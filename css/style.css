@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --gray-color:#DDF2FD;
+    --dark-color:#303841;
+    --ldark-color:#427D9D;
+    --teal-color :#00ADB5;
+}
+/* -------Global-------- */
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+ul{
+    list-style: none;
+}
+/* --------------------- */
+nav{
+    background-color: var(--ldark-color);
+}
+/* --------contact------ */
+.contact .container{
+    color: var(--main-color);
+    background-color: var(--night-color);
+    box-shadow: 0 0 114px -69px  black;
+}
+.contact .contact-icon{
+    width: 3rem;
+    height: 3rem;
+    /* border: 3px solid var(--ldark-color);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 1.5625rem ;
+    color:var(--dark-color);
+}
+/* --------footer------- */
+footer{
+    background-color: var(--dark-color);
+    color: var(--main-color);
+}
