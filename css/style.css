@@ -4,10 +4,8 @@
     box-sizing: border-box;
 }
 :root{
-    --gray-color:#DDF2FD;
-    --dark-color:#303841;
-    --ldark-color:#427D9D;
-    --teal-color :#00ADB5;
+    --white-color:#fff;
+    --dark-color:#000;
 }
 /* -------Global-------- */
 html{
@@ -20,29 +18,69 @@ a{
 ul{
     list-style: none;
 }
-/* --------------------- */
+/* ======================= */
+/* ----------nav---------- */
+/* ======================= */
 nav{
-    background-color: var(--ldark-color);
+    background-color: rgba(0, 0, 0, 0.196);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
-/* --------contact------ */
+/* ======================= */
+/* ---------home---------- */
+/* ======================= */
+.home .container{
+    box-shadow: 0 0 114px -69px  var(--dark-color);
+}
+/* ======================= */
+/* ---------about--------- */
+/* ======================= */
+.about{
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.284);
+}
+/* ======================= */
+/* ---------contact------- */
+/* ======================= */
 .contact .container{
     color: var(--main-color);
     background-color: var(--night-color);
-    box-shadow: 0 0 114px -69px  black;
+    box-shadow: 0 0 114px -69px  var(--dark-color);
 }
 .contact .contact-icon{
-    width: 3rem;
-    height: 3rem;
-    /* border: 3px solid var(--ldark-color);
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px; */
+    width: 2.5rem;
+    height: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     margin:0 1.5625rem ;
     color:var(--dark-color);
+    transition: 1s;
 }
-/* --------footer------- */
+.contact .contact-icon a{
+    transition: 1s;
+}
+.contact .contact-icon a:hover{
+    transform: scale(1.6 , 1.6);
+}
+.contact .contact-btn{
+    color:var(--dark-color);
+    background-color: var(--white-color);
+    border: 2px solid #000;
+    padding:5px 40px;
+    transition: .75s;
+
+}
+.contact .contact-btn:hover{
+    color: var(--white-color);
+    background-color: var(--dark-color);
+}
+
+/* ====================== */
+/* ---------footer------- */
+/* ====================== */
 footer{
     background-color: var(--dark-color);
     color: var(--main-color);
